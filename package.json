@@ -1,0 +1,15 @@
+{
+  "name": "nekonooyasumi2025",
+  "version": "1.0.0",
+  "description": "Hangman game",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "camilla-cs",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}

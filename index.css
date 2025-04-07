@@ -1,50 +1,41 @@
-body {
-    background-color: #FEF5C3;
-    height: 100%;
-    grid-template-rows: auto 1fr auto;
-}
-
-.window-1 {
-    background-color: #FAC1BA;
-    border-radius: 0.4em;
-    width: 40%;
-    height: 30%;
-    align-items: center;
-    margin-left: 30%;
-    
-}
-
-.window-1 > .title-bar > h5 {
-    font-family: "Darumadrop One", serif;
-    font-weight: 400;
-    font-size: large;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#FAC1BA;
+    z-index: -1;
 }
 
-.window-1 > .content{
+.homepage{
     background-color: #FCF2F1 ;
     border-radius: 0.3em;
-    margin: 0.5em;
-    padding: 1em 1em;
-  
-    
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 90%;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding:1em
 }
-.window-1 > .content > p {
+
+
+.homepage > p {
     font-family: "DotGothic16", serif;
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    justify-content: center;
+   margin: 0.5em 0; 
+    color: black;
     
 }
-.window-1 > .content > a {
+.homepage > a {
     background-color:#FAC1BA ;
     border-width: 1em;
     border-color: #DEA394;
+    color: black;
     border-radius: 0.4em;
     width: 5em;
     display: flex;
@@ -57,24 +48,25 @@ body {
 
 }
 
-.window-1 > .content > img {
+.homepage > img {
     width: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin: 0.5em auto;
 }
 
-footer {
+.homepage > footer > h4 {
     font-family: "DotGothic16", serif;
     font-weight: 400;
     font-style: normal;
     font-size: small;
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 2.5rem;  
     text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
     
 }

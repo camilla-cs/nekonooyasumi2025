@@ -22,6 +22,10 @@ html, body {
     padding:1em
 }
 
+.homepage > img {
+    width: 3em;
+    margin: 0.5em auto;
+}
 
 .homepage > p {
     font-family: "DotGothic16", serif;
@@ -48,10 +52,6 @@ html, body {
 
 }
 
-.homepage > img {
-    width: 3em;
-    margin: 0.5em auto;
-}
 
 .homepage > footer > h4 {
     font-family: "DotGothic16", serif;
@@ -71,33 +71,7 @@ html, body {
     
 }
 
-.word-display {
-    display: flex;
-    gap:10px; 
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.word-display > .letter {
-    width: 28px;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 40px;
-    border-bottom: 3px solid black; 
-}
-
-.keyboard {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.keyboard > button {
+.homepage > button {
     width: calc(100% / 9 - 5px);
     background-color: #FAC1BA;
     border-radius: 0.3em;
@@ -105,32 +79,11 @@ html, body {
     outline: #DEA394;
     padding:5px; 
     color: black;
-    font-family: "DotGothic16", serif;
-    font-style: normal;
     font-size: 1rem;
     font-weight: 330;
     text-transform: uppercase;
 }
 
-.keyboard > button:hover {
-    background-color: rgb(168, 205, 238);
-}
-
-.game-modal {
-    position: fixed; 
-    left:0;
-    top:0; 
-    width: 100%;
-    height:100%;
-    background: rgba(0,0,0,0.6);
-
-}
-
-@media (max-width: 782px) {
-    .homepage {
-        flex-direction: column;
-        padding: 30px 15px;
-        align-items: center;
-        
-    }
+.homepage > button:hover {
+    background-color:rgb(168, 205, 238) ;
 }

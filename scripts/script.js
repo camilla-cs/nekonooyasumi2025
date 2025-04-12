@@ -23,9 +23,9 @@ const getRandomWord = () => {
 const gameOver  = (isVictory) => {
     setTimeout(() => {
        if (isVictory) {
-        window.location.href = "/gameWon.html"; 
+        window.location.href = "gameWon.html"; 
        } else {
-        window.location.href = "/gameLost.html"; 
+        window.location.href = "gameLost.html"; 
         }
     }, 300);
 }

@@ -25,9 +25,9 @@ html, body {
 
 .homepage > p {
     font-family: "DotGothic16", serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
-   margin: 0.5em 0; 
+    margin: 0.5em 0; 
     color: black;
     
 }
@@ -75,7 +75,6 @@ html, body {
     display: flex;
     gap:10px; 
     list-style: none;
-    align-items: center;
     justify-content: center;
 }
 

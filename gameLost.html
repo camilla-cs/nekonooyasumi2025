@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ねこのおやすみ</title>
     <link rel="stylesheet" href="gameFinished.css">
-    <script defer src="./game.js"></script> <!-- Link to the game logic script -->
+    <script type ="module" src="./scripts/script.js" defer></script> <!-- Link to the game logic script -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
         
         <p> Oh no! <br> You woke up the cat! <br> Everyone, take cover! </p>
-        <button class="play-again">PLAY AGAIN</button>
+        <button class="play-again" onclick="window.location.href='./index.html'">PLAY AGAIN</button>
         <img src="assets/homepage.gif" class="homepage-gif">
 
         <footer>

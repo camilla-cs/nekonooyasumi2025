@@ -72,13 +72,13 @@ html, body {
 }
 
 .homepage > button {
-    width: calc(100% / 9 - 5px);
     background-color: #FAC1BA;
     border-radius: 0.3em;
     cursor: pointer;
     outline: #DEA394;
     padding:5px; 
     color: black;
+    font-family: "DotGothic16", serif;
     font-size: 1rem;
     font-weight: 330;
     text-transform: uppercase;

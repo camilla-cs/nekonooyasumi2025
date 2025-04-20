@@ -4,12 +4,13 @@
   "description": "Hangman game",
   "main": "main.js",
   "scripts": {
-    "start":"electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "test" : "playwright test"
   },
   "author": "camilla-cs",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.51.1",
     "electron": "^34.2.0"
   }
 }

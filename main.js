@@ -1,6 +1,7 @@
 const { app, BrowserWindow, Menu } = require('electron/main')
 const path = require('node:path')
 
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 500,

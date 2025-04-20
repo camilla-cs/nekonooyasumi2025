@@ -29,6 +29,7 @@ const gameOver  = (isVictory) => {
         }
     }, 300);
 }
+
 // check if letter is part of the word or not 
 const initGame = (button, clickedLetter) => {
     if ( currentWord.includes(clickedLetter)) {

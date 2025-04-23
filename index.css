@@ -54,24 +54,6 @@ html, body {
     margin: 0.5em auto;
 }
 
-.homepage > footer > h4 {
-    font-family: "DotGothic16", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: small;
-    position: absolute;
-    bottom: 1em;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2.5rem;  
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-    
-}
-
 .word-display {
     display: flex;
     gap:10px; 
@@ -95,6 +77,8 @@ html, body {
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 1em;
+    padding: 2em;
 
 }
 

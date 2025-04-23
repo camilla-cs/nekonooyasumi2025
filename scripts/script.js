@@ -10,15 +10,34 @@ let currentWord, correctLetters =[];
 let  livesLeft = 9;  
 
 // get random word from list 
+// const getRandomWord = () => {
+
+//    const {word, hint} = wordsList[Math.floor(Math.random() * wordsList.length)]; 
+
+
+//     currentWord = word; 
+//     console.log(word); 
+//     document.querySelector(".hint-text b").innerText = hint;
+//     wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>` ).join(""); 
+
+    
+// }
 const getRandomWord = () => {
-        const {word, hint} = wordsList[Math.floor(Math.random() * wordsList.length)]; 
-        currentWord = word; 
-        console.log(word); 
-        document.querySelector(".hint-text b").innerText = hint;
-        wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>` ).join(""); 
-    
-    
-}
+    let word, hint;
+
+    if (window.mockWordObj) {
+        // Use mock only if it's been set by the test
+        ({ word, hint } = window.mockWordObj);
+        delete window.mockWordObj; // Optional: clean up so it only runs once
+    } else {
+        ({ word, hint } = wordsList[Math.floor(Math.random() * wordsList.length)]);
+    }
+
+    currentWord = word;
+    console.log(word);
+    document.querySelector(".hint-text b").innerText = hint;
+    wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
+};
 
 const gameOver  = (isVictory) => {
     setTimeout(() => {

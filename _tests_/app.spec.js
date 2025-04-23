@@ -1,6 +1,5 @@
 const { test, expect, _electron: electron } = require('@playwright/test'); 
 
-
 test('App launches and quits', async() => {
     const electronApp = await electron.launch({args:['main.js'] }); 
 
@@ -56,3 +55,49 @@ test('when lives go down to 0, game lost page appears', async() => {
 
 }); 
 
+// test('when guessed Word is correct, user wins', async() => {
+//     const electronApp = await electron.launch({args:['main.js']}); 
+
+//     const mainWindow = await electronApp.firstWindow(); 
+
+//     const gameLink = await mainWindow.waitForSelector('a[href*="game.html"]'); 
+//     await gameLink.click(); 
+//     await mainWindow.waitForLoadState('domcontentloaded'); 
+    
+//     // guessedWord = correct 
+//    const expectedWord = {
+//     word:'neko',
+//     hint: "Japanese for 'cat'."
+//    }
+
+//    await mainWindow.evaluate((wordObj)=> {
+//     window.mockWordObj = wordObj; 
+
+//    }, expectedWord); 
+
+//    await mainWindow.waitForSelector('.word-display'); 
+//    await mainWindow.waitForTimeout(500); 
+
+//     const currentWord = await mainWindow.evaluate(() => window.mockWordObj);
+//     console.log('Current word:', currentWord); // Debug log
+//     expect(currentWord).toEqual(expectedWord);
+
+//    const letters = ['n', 'e', 'k', 'o']; 
+//    for (const letter of letters) {
+//         const button = await mainWindow.waitForSelector(`button:text("${letter}")`); 
+//         await button.click(); 
+//         await mainWindow.waitForTimeout(200); 
+//    }
+
+
+//     // game won page 
+//     await mainWindow.waitForURL(/gameWon\.html/); 
+//     const gameWonUrl = await mainWindow.url(); 
+//     expect(gameWonUrl).toContain('gameWon.html'); 
+
+
+
+//     // app quits 
+//     await electronApp.close(); 
+
+// });

@@ -5,13 +5,15 @@ module.exports = {
   packagerConfig: {
     asar: true,
     executableName: 'neko-no-oyasumi', 
-    icon: 'icons/ iconDesktop.ico'
+    icon: 'icons/iconDesktop'
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        setupIcon:'icons/iconDesktop.ico',
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -19,11 +21,19 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options:{
+          icon:'icons/iconLinux.png'
+        }
+      },
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        options: {
+          icon: 'icons/iconLinux.png',
+        }
+      },
     },
   ],
   plugins: [

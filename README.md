@@ -20,14 +20,18 @@ Wireframes showcasing the first draft meant for a web application, then changed 
 Gameplay demo: 
 
 * Homepage 
+
 ![Homepage](/assets/demo-1.png)
 
 * Game starts
+
 ![Game](/assets/demo-2.png)
 
 * Victory after guessing the word right
+
 ![Victory](/assets/demo-3.png)
 
 * Defeat
+
 ![Loss](/assets/demo-4.png)
 

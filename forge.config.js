@@ -4,16 +4,8 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
-    prune:true, 
     executableName: 'neko-no-oyasumi', 
-    icon: 'icons/iconDesktop',
-    ignore: [
-    "test($|/)", 
-    "docs($|/)", 
-    "\\.map$", 
-    "\\.ts$",
-    "\\.md$"
-  ]
+    icon: 'icons/iconDesktop'
   },
   rebuildConfig: {},
   makers: [

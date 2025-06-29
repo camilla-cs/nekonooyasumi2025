@@ -1,11 +1,5 @@
 # nekonooyasumi2025
-This project is a Hangaman game application built using Javascript, HTML and CSS and can be downloaded and supported by MacOS, Windows and Linux. 
-
-## How to download the app: 
-1. Get the latest release [here](https://github.com/camilla-cs/nekonooyasumi2025/releases/tag/v1.0.0)
-2. Download the zip file. 
-3. Open the file. 
-
+This project is a Hangman game application built using Javascript, HTML and CSS. 
 
 ## Tech Stack 
 - HTML
@@ -27,11 +21,11 @@ Gameplay demo:
 
 ![Game](/assets/demo-2.png)
 
-* Victory after guessing the word right
+* Victory page
 
 ![Victory](/assets/demo-3.png)
 
-* Defeat
+* Defeat page
 
 ![Loss](/assets/demo-4.png)
 

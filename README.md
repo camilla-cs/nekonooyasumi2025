@@ -1,5 +1,6 @@
 # nekonooyasumi2025
 This project is a Hangman game application built using Javascript, HTML and CSS. 
+To be able to play the game, click on the following link : [Neko no Oyasumi](https://nekonooyasumi.netlify.app/)
 
 ## Tech Stack 
 - HTML
